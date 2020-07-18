@@ -1,0 +1,7 @@
+<Limit GET POST PUT DELETE OPTIONS>
+    Allow from all
+</Limit>
+RewriteEngine On
+RewriteBase /application/
+RewriteRule .* index.php [L]
+DirectoryIndex index.php

@@ -1,0 +1,18 @@
+#rec11351073 {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    pading-left: 30px;
+}
+@media screen and (max-width: 640px) {
+    .t135 {
+        padding-top: 0;
+    }   
+}
+@media screen and (max-width: 400px) {
+    .t135 {
+        padding-top: 2%;
+    }   
+}

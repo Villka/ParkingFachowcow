@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jquery/jquery.datetimepicker.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div>
+        <h3>Data Picker</h3>
+        <input type="text" id="picker" class="form-control">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.datetimepicker.full.min.js"></script>
+    <script>
+        jQuery.datetimepicker.setLocale('pl')
+        $('#picker').datetimepicker({
+            timepicker: true,
+            datapicker: true,
+            format: 'Y-m-d H:i',
+            minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+            maxDate:'+1970/01/07',//tomorrow is maximum date calendar
+            minTime:0,// now
+            mask: true,
+            lang:'pl',
+            i18n: {
+               pl: {
+                month: ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'],
+                dayOfWeek: ['Pn','Wt','Śr','Cz','Pt','So','N']
+            }
+            }
+        })
+    </script>
+    <style>
+                        @media screen and (max-width: 1199px) {
+                    #rec146859762 .t396__artboard {
+                        background-attachment: scroll;
+                    }
+                    #rec146859762 .t396__filter {
+                        background-attachment: scroll;
+                    }
+                    #rec146859762 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+    </style>
+</body>
+</html>
